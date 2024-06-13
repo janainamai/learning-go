@@ -1,36 +1,45 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
-
 func main() {
-	const PI float64 = 3.1415
-	var raio = 3.2 // tipo (float) inferido pelo Go
+	// Sintaxe básica de declaração de variáveis:
+	// var nomeDaVariavel tipoDaVariavel
+	// Exemplos:
+	var idade int
+	var nome string
+	var salario float64
+	var adulto bool
 
-	// forma reduzida de criar uma variável
-	// : declara
-	// = atribui
-	area := PI * math.Pow(raio, 2)
-	fmt.Println("A área da circunferência é", area)
+	// Sintaxe básica de atribuição de variáveis
+	// nomeDaVariavel = valor
+	// Exemplos:
+	idade = 25
+	nome = "João"
+	salario = 2500.50
+	adulto = true
+	println(idade, nome, salario, adulto)
 
-	// declarando constantes e variáveis em blocos de construção
-	const (
-		a = 1
-		b = 2
-	)
-	var (
-		c = 3
-		d = 4
-	)
-	println(a, b, c, d)
+	// Sintaxe de declaração e atribuição em uma linha:
+	// var nomeDaVariavel tipoDaVariavel = valor
+	// Exemplo:
+	var sobrenome string = "Mai"
+	println(sobrenome)
 
-	// declarando mais de uma variável na mesma linha
-	var e, f bool = true, false
-	fmt.Println(e, f)
+	// Sintaxe de atribuição curta:
+	// nomeDaVariavel := valor
+	// Exemplo:
+	quantidade := 10
+	valor := 80.00
+	println(valor, quantidade)
 
-	// declarando variáveis de tipos diferentes na mesma linha
-	g, h, i := 2, false, "texto"
-	fmt.Println(g, h, i)
+	// Ao declarar variáveis sem atribuir valores, cada tipo possui um valor padrão:
+	// Inteiro: 0
+	// Float64: 0.0
+	// Booleano: false
+	// String: ""
+	// Interface, slice, channel, map, ponteiro, função: nil
+
+	// Tipos Compostos:
+	// Slice, map, channel: nil (vazio)
+	// Array: elementos com valores padrão do tipo (ex: array de `int` com elementos `0`)
+	// Struct: campos com valores padrão do tipo (ex: campos `int` com valor `0` e campos `string` com valor `""`)
 }

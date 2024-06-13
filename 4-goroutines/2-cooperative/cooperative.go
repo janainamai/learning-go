@@ -7,7 +7,7 @@ import (
 // cooperative scheduling
 // aqui tentaremos visualizar como funciona a forma cooperativa das threads trabalharem no Go
 
-// este modelo de concorrência veio na versão 1.14,
+// este modelo de concorrência veio na versão 1-sqlpuro.14,
 // refere-se à abordagem em que as goroutines cooperam voluntariamente para compartilhar o tempo de CPU e permitir que outras tarefas sejam executadas
 // isso é feito sem a interferência direta do sistema operacional ou de um mecanismo de escalonamento externo
 // em vez disso, as goroutines cooperam entre si, liberando voluntariamente o controle da CPU quando necessário

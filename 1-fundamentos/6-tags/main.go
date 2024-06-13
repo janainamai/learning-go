@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"learning-go/7-tags/transform"
+	"learning-go/1-fundamentos/6-tags/transform"
 )
 
 type User struct {
