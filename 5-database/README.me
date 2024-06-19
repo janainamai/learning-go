@@ -9,3 +9,15 @@ senha: root
 
 create table products (id varchar(255), name varchar(80), price decimal (10,2), primary key (id));
 
+show tables;
+
+desc product;
+
+### Caso queira deletar as tabelas para utilizar outro arquivo:
+SET FOREIGN_KEY_CHECKS = 0;
+
+DROP TABLE IF EXISTS products_categories;
+DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS categories;
+
+SET FOREIGN_KEY_CHECKS = 1;
